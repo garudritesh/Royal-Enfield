@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    
+    <title>Login</title>
+    <link rel="stylesheet" href="styleo.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <link rel="icon" type="image/jpg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjeTZ6Uls1zO2sEzmIJAgNzuvhuaoFayM3vlRa0b3qyI_aA8T6&usqp=CAU"/>
+<script type="text/javascript">
+function msg()//user defined
+{var name,pwd1,pwd2,n;
+name=window.prompt("Enter your Email address");
+pwd1=window.prompt("Enter new password");
+pwd2=window.prompt("Re-enter new password");	
+
+if(pwd1 != pwd2)
+{
+n=window.alert("Password is incorrect");
+return false;
+}
+n=window.alert("Password successfully changed");
+return true;
+
+}
+</script>
+    
+  </head>
+  <body>
+  
+    <div class="bg-img">
+      <div class="content">
+	
+        <header>Login Form</header>
+        <form action="#">
+          <div class="field">
+            <span class="fa fa-user"></span>
+            <input type="text" required placeholder="Email or Phone">
+          </div>
+<div class="field space">
+            <span class="fa fa-lock"></span>
+            <input type="password" class="pass-key" required placeholder="Password">
+            <span class="show">SHOW</span>
+          </div>
+<div class="pass">
+            <a href="#" onclick="msg()">Forgot Password?</a>
+          </div>
+<div class="field">
+            <input type="submit" value="LOGIN">
+          </div>
+</form>
+<div class="login">
+Or login with</div>
+<div class="links">
+          <div class="facebook">
+            <i class="fab fa-facebook-f"><span><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=164120184241069&kid_directed_site=0&app_id=164120184241069&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fapp_id%3D164120184241069%26cbt%3D1589020790121%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fconnect%252Fxd_arbiter.php%253Fversion%253D46%2523cb%253Df39b5229c002cf4%2526domain%253Dwww.royalenfield.com%2526origin%253Dhttps%25253A%25252F%25252Fwww.royalenfield.com%25252Ff3a6a04a78a717c%2526relation%253Dopener%26client_id%3D164120184241069%26display%3Dpopup%26domain%3Dwww.royalenfield.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.royalenfield.com%252Fin%252Fen%252Fhome%252F%26locale%3Den_US%26logger_id%3Df2118c3ef7a8c24%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fconnect%252Fxd_arbiter.php%253Fversion%253D46%2523cb%253Df91e069e130418%2526domain%253Dwww.royalenfield.com%2526origin%253Dhttps%25253A%25252F%25252Fwww.royalenfield.com%25252Ff3a6a04a78a717c%2526relation%253Dopener%2526frame%253Df270f447e3091a%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv3.2%26ret%3Dlogin%26fbapp_pres%3D0&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df91e069e130418%26domain%3Dwww.royalenfield.com%26origin%3Dhttps%253A%252F%252Fwww.royalenfield.com%252Ff3a6a04a78a717c%26relation%3Dopener%26frame%3Df270f447e3091a%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0">Facebook</span></a></i>
+          </div>
+<div class="instagram">
+            <i class="fab fa-google"><span><a href="https://accounts.google.com/signin/oauth/identifier?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.royalenfield.com%3Fid%3Dauth55209&response_type=code%20permission%20id_token&scope=openid%20profile%20email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&openid.realm&client_id=777274662796-qs35tlad5fb1tapd6csbiakluaaj9186.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.royalenfield.com&access_type=offline&include_granted_scopes=true&prompt=consent&origin=https%3A%2F%2Fwww.royalenfield.com&gsiwebsdk=2&o2v=1&as=bmIcyuKyY6wdHbbd2H1tVw&flowName=GeneralOAuthFlow">Google</span></a></i>
+          </div>
+</div>
+<div class="signup">
+Don't have account?
+          <a href="signup.html">Signup Now</a>
+        </div>
+</div>
+
+</div>
+
+
+
+<script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "HIDE";
+         showBtn.style.color = "#3498db";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "SHOW";
+         showBtn.style.color = "#222";
+       }
+      });
+    </script>
+	
+  </body>
+</html>

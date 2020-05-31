@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+
+
+
+body{
+	margin:0;
+	padding:0;
+	background:url(jan_2020_thumb.jpg) no-repeat ;
+	background-size:cover;
+	place-items: center;
+	text-align:center;
+
+}
+.text .p1{
+	font-family:Arial;
+	position:absolute;
+	width: 100%;
+	height:150%;
+	font-size: 400%;
+	top:17%;
+	color:white;
+	text-shadow: 2px 2px 5px black;
+	
+
+
+}
+.text .p2{
+	font-family:Arial;
+	position:absolute;
+	width: 100%;
+	font-size: 200%;
+	top:37%;
+	color:black;
+	text-shadow: 2px 2px 5px white;
+
+	
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create An Account</title>
+<link rel="stylesheet" href="style1.css">
+<link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+function checkform(form)//user defined
+{ var n;
+if(form.u1.value =="" && form.u2.value =="" && form.u3.value =="" && form.u4.value =="") {
+form.u1.focus();
+return false;
+}
+
+var re= /^[\w ]+$/; 
+
+if(!re.test(form.u1.value)) {
+n=window.alert("Errors: First name contain invalid characters!");
+form.u1.focus();
+return false;
+}
+
+if(!re.test(form.u2.value)) {
+n=window.alert("Errors: Last name contain invalid characters!");
+form.u2.focus();
+return false;
+}
+
+n=window.alert("You successfully created your account");
+return true;
+	
+}
+</script>
+
+		<link rel="icon" type="image/jpg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjeTZ6Uls1zO2sEzmIJAgNzuvhuaoFayM3vlRa0b3qyI_aA8T6&usqp=CAU"/>
+		</head>
+		
+		<body>
+			
+		<div class="logo"><a href ="royal enfield.html"><img src="logoin.png"></a>
+		</div>
+		<nav>
+			<ul>
+				
+				<li><a href ="#">   </a></li>
+				<li><a href ="motorcycle.html"> Motorcycles</a></li>
+				<li><a href ="acc.html"> Accessories</a></li>
+				<li><a href ="Apparel.html"> Apparel</a></li>
+				<li><a href ="https://www.royalenfield.com/in/en/rides/marquee-rides/whiteout-2020/"> Rides</a></li>
+				<li><a href ="index.html"> Our World</a></li>
+				<li><a href ="aboutus.html">About Us</a></li>
+				
+				<li><a href ="loginpage.html">Login</a></li>
+				<li><a href ="country.html"><i class="fa fa-globe" aria-hidden="true"></i>Country</a></li>			
+			</ul>	
+		</nav>
+		<div class="login-box">
+			<h1>Sign up</h1>
+			
+			<form method="post" action="royal enfield.html" onsubmit="return checkform(this);">
+			<div class="textbox">
+	
+			<input type="text" name="u1" placeholder="First name" required/>
+			
+	
+			</div>
+			<br>
+			<div class="textbox">
+	
+			<input type="text" name="u2" placeholder="Last name" required/>
+			
+	
+			</div>
+			<br>
+			<div class="textbox">
+	
+			<input type="text" name="u3" placeholder="Mobile number or Email address" required/><Br>
+			
+	
+			</div>
+			
+			<br>
+			<div class="textbox">
+			
+				<input type="password" placeholder="Password" name="u4" required/>
+				</div>
+				<br>
+			<input class="btn" type="submit" name="b1" value="Sign in">
+			</form>
+		</div>		
+		</body>
+		</html>
+
+
